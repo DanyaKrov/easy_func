@@ -5,11 +5,11 @@ using namespace std;
 
 int itc_spr(int a, int b)
 {
-    int c = a * b;
-    if (c < 0) {
-		c = c * -1;
+    int c;
+    if (a <= 0 || b <= 0) {
+		c = -1;
     } else {
-		c = c;
+		c = a * b;
 	}
     return c;
 }

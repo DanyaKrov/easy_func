@@ -5,7 +5,11 @@ using namespace std;
 
 int itc_pow(int n, int i)
 {
-    int m = n ** i;
+    int m = 1;
+    while (i > 0){
+        i --;
+        m *= n;
+    }
     return m;
 }
 

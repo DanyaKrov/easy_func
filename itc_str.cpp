@@ -3,7 +3,7 @@
 
 using namespace std;
 
-double itc_str(double a, double b, double c)
+int itc_str(int a, int b, int c)
 {
     if (a > b + c)
         return -1;
@@ -11,8 +11,10 @@ double itc_str(double a, double b, double c)
         return -1;
     else if (c > a + b)
         return -1;
+    else if (a <= 0 || b <= 0 || c <= 0)
+        return -1;
     else{
-        double p = (a + b + c) / 2.0;
+        double p = (a + b + c) / 2;
         double num = p * (p - a) * (p - b) * (p - c);
         return itc_sqrt(num);
     }

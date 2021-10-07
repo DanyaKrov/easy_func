@@ -3,12 +3,12 @@
 
 using namespace std;
 
-bool itc_ispositive(int number)
+bool itc_ispositive(int num)
 {
-    if (number > 0){
+    if (num >= 0){
         return true;
     }
-    else if (number < 0){
+    else if (num < 0){
         return false;
     }
 }
